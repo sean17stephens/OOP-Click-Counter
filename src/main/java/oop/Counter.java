@@ -46,11 +46,7 @@ public class Counter {
     // Print the value of count from the method after the decrement.
     // Call this undo() method from App start().
 
-    public void undo() {
-        if (count > 0)
-            count = count - 1;
-        System.out.println("Counter undo! count = " + count);
-    }
+
 
     public void display() {
         System.out.println("Display count, count = " + count );
