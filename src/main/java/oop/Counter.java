@@ -38,6 +38,9 @@ public class Counter {
     // Implement reset() method to set the count to 0.
     // the value of this counter to 0.
     // Test by calling from App start()
+    public void reset() {
+        this.count = 0;
+    }
 
 
     //TODO
@@ -45,6 +48,13 @@ public class Counter {
     // Do not allow the count to become negative.
     // Print the value of count from the method after the decrement.
     // Call this undo() method from App start().
+
+    public void undo() {
+        if (this.count > 0) {
+            this.count = this.count - 1;
+            System.out.println("Count Reduced");
+        }
+    }
 
 
 
