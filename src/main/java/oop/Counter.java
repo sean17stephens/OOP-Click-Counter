@@ -26,7 +26,7 @@ public class Counter {
      * click() increments the value of this counter by 1.
      */
     public void click() {
-        if (count <= limit) {
+        if (count < limit) {
             count = count + 1;
         } else {
             System.out.println("Limit Reached");
