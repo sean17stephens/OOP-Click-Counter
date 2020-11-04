@@ -37,15 +37,28 @@ public class App
         myCounter.click();
         myCounter.display();
         myCounter.undo();
-        myCounter.display();
+        myCounter.undo();
+        myCounter.undo();
+        myCounter.undo();
         myCounter.undo();
         myCounter.display();
-        myCounter.undo();
+
+        myCounter.reset();
         myCounter.display();
-        myCounter.undo();
-        myCounter.display();
-        myCounter.undo();
-        myCounter.display();
+
+        //TODO - Check that limit cannot be exceeded
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+        myCounter.click();
+
         //TODO
         // Add a JUnit test method to test undo()
 
@@ -53,7 +66,7 @@ public class App
         // Create a second Counter object, then
         // click() it once, undo() twice, click(), then display()
         // What count do you expect?
-
+        System.out.println("Second Counter Object - busCounter");
     }
 
 }

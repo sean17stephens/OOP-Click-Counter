@@ -6,7 +6,7 @@ package oop;
 
 public class Counter {
     private int count;  // current count , initially 0
-    private int limit;
+    private int limit = 10;
 
     // Constructor
     public Counter(int limit) {
@@ -52,10 +52,11 @@ public class Counter {
     public void undo() {
         if (this.count > 0) {
             this.count = this.count - 1;
-            System.out.println("Count Reduced");
+            System.out.println("Count Reduced. Count = " + count);
         }
     }
 
+    
 
 
     public void display() {

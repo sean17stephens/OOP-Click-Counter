@@ -34,4 +34,22 @@ public class AppTest
         int actual = counter.getCount();
         assertEquals(expected, actual);
     }
+
+    public void checkLimit() {
+        Counter counter = new Counter();
+        counter.click();    // should increment by 1
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        counter.click();
+        int expected = 10;
+        int actual = counter.getCount();
+        assertEquals(expected, actual);
+    }
 }
